@@ -1,0 +1,31 @@
+{
+    "name": "ridislam/inreview",
+    "description": "Review and Rating Package",
+    "type": "library",
+    "require": {
+        "php": "7.2",
+        "illuminate/support": "~5.8",
+        "illuminate/database": "~5.8"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rid Islam",
+            "email": "i.ridislam@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Ridislam\\InReview\\" : "src/"
+        },
+        "extra": {
+            "laravel" : {
+                "providers": [
+                    "Ridislam\\InReview\\InReviewServiceProvider"
+                ]
+            }
+        }
+    }
+}
